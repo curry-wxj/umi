@@ -1,0 +1,10 @@
+{
+  "logo": "/images/logo.svg",
+  "cfgs": [
+    { "key": "demo1", "url": "config/demo1.json", "loaded": true },
+    { "key": "demo", "url": "config/demo.js", "loaded": true },
+    { "key": "menu", "url": "config/menu.js", "loaded": true },
+    { "key": "mapcfg", "url": "config/mapcfg.json", "loaded": true }
+  ],
+  "home": "/hello/helloworld"
+}

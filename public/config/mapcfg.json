@@ -1,0 +1,114 @@
+{
+  "api": "http://192.168.8.52:8086/ecity_js_api1.0",
+  "logo":"/dma/images/map/logo.png",
+  "centerx": -1,
+  "centery": -1,
+  "initlevel": -1,
+  "extent": {
+    "xmin": 435154.83135586,
+    "xmax": 457935.501917201,
+    "ymin": 3123324.10733168,
+    "ymax": 3141553.935458003
+  },
+  "isJwd": 0,
+  "overview": 0,
+  "scale": 1,
+  "position": 1,
+  "positionPrefix": {
+    "x": "x",
+    "y": "y"
+  },
+  "map_base": [
+    {
+      "group": "m_1",
+      "visible": 1,
+      "maps": [
+        {
+          "id": "base_dxt",
+          "url": "http://192.168.8.242:6080/arcgis/rest/services/jsgs/JS_DXT/MapServer",
+          "type": "tiled",
+          "name": "吉首地形图",
+          "params": {
+            "imgurl": "/images/legend/layerBtn/dxt.png",
+            "legendurl": "/images/legend/layerBtn/dxt.png",
+            "maxscale": "",
+            "minscale": ""
+          }
+        }
+      ]
+    },
+    {
+      "group": "m_2",
+      "visible": 0,
+      "maps": [
+        {
+          "id": "base_yxt",
+          "url": "http://192.168.8.242:6080/arcgis/rest/services/jsgs/js_sltdt/MapServer",
+          "type": "tiled",
+          "name": "常熟影像",
+          "params": {
+            "imgurl": "/images/legend/layerBtn/dxt.png",
+            "legendurl": "/images/legend/layerBtn/dxt.png",
+            "maxscale": "2000",
+            "minscale": "1000000"
+          }
+        }
+      ]
+    }
+  ],
+  "map_net": [
+    {
+      "group": "n_5",
+      "visible": 0,
+      "maps": [
+        {
+          "id": "net_csgw_t",
+          "url": "http://222.92.106.165:6080/arcgis/rest/services/csgwappdt/MapServer",
+          "type": "dynamic",
+          "name": "吉首矢量地形图",
+          "params": {
+            "maxscale": "",
+            "minscale": "5000",
+            "snapLayers": "",
+            "layersName": []
+          }
+        }
+      ]
+    },
+    {
+      "group": "n_6",
+      "visible": 0,
+      "maps": [
+        {
+          "id": "jsgsgw",
+          "url": "http://192.168.8.242:6080/arcgis/rest/services/jsgs/jsgsgw/MapServer",
+          "type": "dynamic",
+          "name": "吉首探测管网最新",
+          "params": {
+            "maxscale": "",
+            "minscale": "500000",
+            "snapLayers": "",
+            "layersName": []
+          }
+        }
+      ]
+    }
+  ],
+  "map_dma": [
+    {
+      "group": "t_1",
+      "visible": 1,
+      "maps": [
+        {
+          "id": "map_dma",
+          "url": "http://192.168.8.242:6080/arcgis/rest/services/cszls/10fenqu/MapServer",
+          "type": "dynamic",
+          "name": "有线",
+          "params": {
+            "legendurl": "/module/layerShowManager/images/legend_wsgw.png"
+          }
+        }
+      ]
+    }
+  ]
+}

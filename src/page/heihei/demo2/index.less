@@ -1,0 +1,31 @@
+// @import (reference) "../../index"; // 引入index.less
+
+.centerPos(@w:100,@h:100){ //定义函数
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-top: unit(-(@h/2),px);
+  margin-left: unit(-(@w/2),px);  // unit加单位
+}
+@link-color:red; //定义变量
+.wrap{
+  width: 100%;
+  height: calc(100vh - 180px);
+  position: relative;
+  .box{
+    // .centerPos 默认值
+    .centerPos(200,200);
+    width: 200px;
+    height: 200px;
+    background: @link-color;
+  }
+  &>.bg{
+    // .wrap > .bg
+  }
+  &.bg{
+  // .wrap.bg
+  }
+  &:hover{
+  // .wrap:hover
+  }
+}
